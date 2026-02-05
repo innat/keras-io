@@ -944,7 +944,7 @@ plt.close(fig)
 """
 When you open the saved GIF, you should see a visualization similar to this.
 
-![Animation of the brain tumor segmentation results](https://i.imgur.com/CbaQGf2.gif)
+![rendered-gif](https://i.imgur.com/CbaQGf2.gif)
 """
 
 """

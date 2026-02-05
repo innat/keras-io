@@ -174,12 +174,12 @@ print(
 <div class="k-default-codeblock">
 ```
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1770323093.743310    8167 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1770323093.750920    8167 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-W0000 00:00:1770323093.769755    8167 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1770323093.769779    8167 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1770323093.769782    8167 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1770323093.769784    8167 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+E0000 00:00:1770324965.698330   18117 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1770324965.705562   18117 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1770324965.723258   18117 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1770324965.723278   18117 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1770324965.723280   18117 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1770324965.723282   18117 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
 
 keras backend: jax
 keras version: 3.13.2
@@ -503,7 +503,7 @@ val_ds = val_dataloader(val_datalist, batch_size=1)
 ```
 2 1
 
-I0000 00:00:1770323097.105766    8167 gpu_device.cc:2019] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13764 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
+I0000 00:00:1770324967.859718   18117 gpu_device.cc:2019] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13764 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
 
 WARNING:tensorflow:From /home/jupyter/py311/lib/python3.11/site-packages/tensorflow/python/util/deprecation.py:660: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -1164,7 +1164,7 @@ plt.close(fig)
 
 When you open the saved GIF, you should see a visualization similar to this.
 
-![Animation of the brain tumor segmentation results](https://i.imgur.com/CbaQGf2.gif)
+![rendered-gif](https://i.imgur.com/CbaQGf2.gif)
 
 ---
 ## Additional Resources
